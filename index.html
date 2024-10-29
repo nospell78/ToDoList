@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo list</title>
+    <script src="app.js" defer></script>
+</head>
+    <body>
+        <div class="container">
+            <div class="todo-header">
+                <h1>Todo List</h1>
+                <img src="/icons8-test.gif" height="50px">
+            </div>
+            
+            <div class="todo-body">
+                <input 
+                    class="todo-input" 
+                    type="text" 
+                    placeholder="Add your ToDo..."
+                    id = "todoText"
+                />
+                <img 
+                src="plus.png" 
+                alt="+" 
+                id ="AddUpdateClick" 
+                onclick="CreateToDoData()">
+            </div>
+            <ul 
+            class="list-items" 
+            id="list-items">
+            </ul>
+        </div>
+    </body>
+</html>
